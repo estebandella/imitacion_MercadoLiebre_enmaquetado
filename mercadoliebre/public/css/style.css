@@ -1,0 +1,418 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* font-family: sans-serif; */
+    font-size: 12px;
+    color: #666;
+}
+
+.banner {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+}
+
+.top-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-around;
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+.header-logo {
+    width: 130px;
+}
+
+.header-buscadorBar {
+    display: block;
+    /*/paso a bloque para que quede al lado */
+    text-align: center;
+    background-color: #ffff;
+    padding: 10px 5px;
+    border-radius: 5px;
+    color: #666;
+    height: 37px;
+}
+
+.header-buscadorBar input {
+    border: none;
+    /* /quito el borde del texto */
+    width: 90%;
+    color: #666;
+}
+
+.header-comprar {
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    margin: 15px 0px;
+    color: #666;
+}
+
+.hamburg-bar {
+    background-color: #03264C;
+    color: #ffff;
+    padding: 8px;
+    text-align: center;
+    /* centra texto dentro del bloque */
+    display: block;
+    /* centra bloque */
+    width: 40px;
+    /* centra bloque */
+    margin: auto;
+    /* centra bloque */
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.nav-bar ul {
+    list-style: none;
+    /*quita los puntos o botones*/
+    padding: 0%;
+}
+
+.nav-bar a {
+    text-align: left;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 0%;
+    color: #666;
+    font-weight: bold;
+}
+
+.main-article {
+    padding: 10px;
+    background-color: #ebebeb;
+}
+
+.main-article h2 {
+    padding: 10px 0px;
+}
+
+img {
+    width: 100%;
+}
+
+.fas.fa-truck {
+    display: block;
+    color: #39b54a;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid 1px #39b54a;
+    text-align: center;
+
+    margin: 0px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transform: rotate(0deg);
+}
+
+.articulo-sub {
+    padding: 15px;
+    background-color: white;
+    margin: 0%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    display: inline-block;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    box-shadow: none;
+}
+
+.article-list {
+    margin: 0px 0px 40px 0px;
+}
+
+.precio {
+    font-size: 18px;
+    text-align: left;
+    margin: 5px;
+    width: 75px;
+}
+
+.descuento {
+    font-size: 16px;
+    text-align: left;
+    color: #39b54a;
+    margin: 5px;
+}
+
+.articuloNomnbre {
+    font-size: 12px;
+    text-align: left;
+    display: block;
+    color: #666;
+    ;
+    background-color: #ffff;
+    padding: 15px;
+    margin: 0px;
+}
+
+.ofertas-list {
+    display: flex;
+}
+
+/* TRANSITION ******************************** */
+
+article:hover .articuloNomnbre {
+    display: block;
+}
+
+article:hover {
+    box-shadow: 2px 2px 5px 1px black;
+}
+
+.fas.fa-truck:hover {
+    transform: rotate(270deg);
+    transition: all 0.5s
+}
+
+/* ******************************************* */
+
+footer {
+    text-align: center;
+    margin: 10px 15%;
+}
+
+.footer-pie i {
+    font-size: 2em;
+    color: blue;
+    margin: 50px 0px 10px 0px;
+}
+
+.footer-pie p {
+    font-size: 12px;
+    margin: 0px 0px;
+}
+
+.footer-pie h2 {
+    font-size: 16px;
+    margin: 0px 0px;
+}
+
+.footer-copy p {
+    font-size: 12px;
+    text-align: left;
+    margin: 50px 0px 10px 0px;
+}
+
+.main-article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+/* REGISTER FORMULARIO ********************* */
+
+.form-register {
+    background-color: #ebebeb;
+    padding: 10px 0px 10px 25px;
+}
+
+.form-register input {
+    display: block;
+    width: 90%;
+    height: 40px;
+    padding: 10px 5px;
+    margin: 25px 5px;
+    border: none;
+    border-radius: 5px;
+}
+.radiobutton{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 40px;
+    margin: 10px 0px;
+}
+
+.radiobutton input {
+    width: 15px;
+}
+
+.checkBox{
+    margin: 10px 0px;
+}
+
+.checkBox-check{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    height: 40px;
+}
+
+.checkBox input{
+    width: 15px;
+}
+
+.checkBox label{
+    margin: 0px 10px;
+}
+
+.submit, .reset{
+    background-color: #03264C;
+    color: #ffff;
+}
+
+/* FORMULARIO LOGIN **************** */
+
+.login-input {
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.login-input input {
+    display: block;
+    width: 90%;
+    height: 40px;
+    padding: 10px 5px;
+    margin: 25px 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-input .submit {
+    background-color: #03264C;
+    color: #ffff;
+}
+
+@media (min-width:361px) {
+    .articuloNomnbre {
+        display: none;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+}
+
+@media (min-width:768px) {
+    article {
+        box-shadow: 0px 0px 10px rgb (100, 100, 100);
+        max-width: 341px;
+    }
+
+    .article-list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        justify-content: space-around;
+    }
+
+    .hamburg-bar {
+        display: none;
+    }
+
+    .top-header {
+        flex-wrap: nowrap;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .header-logo {
+        flex-grow: 0;
+    }
+
+    .header-buscadorBar {
+        flex-grow: 1;
+    }
+
+    .header-comprar {
+        width: max-content;
+    }
+
+    .header-buscadorBar {
+        margin: 0px 20px;
+        max-width: 70%;
+    }
+
+    .nav-bar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .nav-bar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-bar ul li {
+        padding: 30px 10px 0px 10px;
+    }
+
+    /* REGISTER FORMULARIO ********************* */
+
+    /* .form-register {
+        justify-content: center;
+    } */
+
+    /* ******************************************* */
+
+}
+
+@media (min-width:1280px) {
+    article {
+        box-shadow: 0px 0px 10px rgb (100, 100, 100);
+    }
+
+    .article-list {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-grow: 1;
+        justify-content: space-around;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px;
+    }
+
+    .footer-pie {
+        width: 30%;
+        padding: 0px 70px;
+        margin: 0px;
+    }
+
+    .footer-copy {
+        width: 100%;
+        padding: 0px 70px;
+    }
+
+    /* FORMULARIO ********************************* */
+
+    .login-input input {
+        width: 80%;
+    }
+
+    .login-input .submit {
+        width: 80%;
+    }
+}

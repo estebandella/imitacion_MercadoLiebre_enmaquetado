@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- viewport: Para que se adapte a la resolucion del celular -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado liebre</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/normalize.css">
+    <script src="https://kit.fontawesome.com/e0f89e011a.js" crossorigin="anonymous"></script>
+
+    <!-- FUENTE PARA EL TEXTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="top-header">
+
+        <!-- LOGO -->
+        <div class="header-logo">
+            <img src="/images/logo-mercado-liebre.svg">
+        </div>
+
+        <!-- BARRA DE BUSQUEDA -->
+        <form class="header-buscadorBar" action="/busquedaProd" method="POST">
+            <input type="text" name="buscarProducto" value="Buscar productos,marcas">
+            <i class="fas fa-search"></i>
+        </form>
+
+        <!-- TEXTO TITULO -->
+        <h2 class="header-comprar">
+            <i class="fas fa-hand-holding-usd"></i>
+            Compra en cuetos y sin tarjeta de credito
+        </h2>
+
+        <!-- BARRA DE NAVEGACION CON LISTA DE OPCIONES -->
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Crea tu cuenta <i class="far fa-id-card"></i> </a></li>
+                <li><a href="#">Ingresa <i class="fas fa-sign-in-alt"></i> </a></li>
+                <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i> </a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburg-bar">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- FORMULARIO DE REGISTRO -->
+    <form class="form-register" action="/register">
+
+        <input type="text" id="fname" name="firstName" placeholder="Nombre" required minlength="3" maxlength="8">
+
+        <input type="text" id="lname" name="lastName" placeholder="Apellido" required minlength="3"
+            maxlength="8">
+
+        <input type="text" id="lname" name="user" placeholder="Nombre de usuario">
+
+        <label for="lname">Fecha de Nacimiento:</label>
+        <input type="date" id="lname" name="fechaNacimiento">
+
+        <input type="text" id="lname" name="domicilio" placeholder="Domicilio">
+
+        <!-- CHECK BOTTOM (PERFIL DE USUARIO)-->
+        <label for="lname">Perfil del usuario</label>
+        <div class="radiobutton">
+            <label for="lname">Comprar</label>
+            <input type="radio" name="consulta-compra-vende" value="compra">
+
+            <label for="lname">Vender</label>
+            <input type="radio" name="consulta-compra-vende" value="vende">
+        </div>
+
+        <!-- CHECK BOX (INTERESES) -->
+        <label for="lname">Intereses</label>
+        <div class="checkBox">
+
+            <div class="checkBox-check">
+                <label for="lname">Electro:</label>
+                <input type="checkbox" name="categoria-interes" value="Electro">
+            </div>
+
+            <div class="checkBox-check">
+                <label for="lname">Moda:</label>
+                <input type="checkbox" name="categoria-interes" value="Moda">
+            </div>
+
+            <div class="checkBox-check">
+                <label for="lname">Hogar:</label>
+                <input type="checkbox" name="categoria-interes" value="Hogar">
+            </div>
+
+            <div class="checkBox-check">
+                <label for="lname">Juguetería:</label>
+                <input type="checkbox" name="categoria-interes" value="Juguetería">
+            </div>
+
+            <div class="checkBox-check">
+                <label for="lname">Vida sana:</label>
+                <input type="checkbox" name="categoria-interes" value="Vida sana">
+            </div>
+
+        </div>
+
+        <!-- SUBIR ARCHIVOS -->
+        <label>Seleccionar una imagen para el perfil:</label>
+        <input type="file" name="avatar" accept=".jpg" multiple>
+
+        <!-- INGRESAR PASWORD -->
+        <input type="password" name="clave" placeholder="Pasword">
+
+        <input type="password" name="clave" placeholder="Confirmar Pasword">
+
+        <!-- BOTONES BORRAR Y ENVIAR -->
+        <input class="submit"  type="submit" value="Submit">
+        <input class="reset"  type="reset" value="Delet">
+
+    </form>
+
+
+    <!-- PIE DE PAGINA -->
+    <footer>
+        <div class="footer-pie">
+            <i class="fas fa-credit-card"></i>
+            <h2>Pagá con tarjeta o en efectivo</h2>
+            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es
+                seguro!</p>
+        </div>
+        <div class="footer-pie">
+            <i class="fas fa-gift"></i>
+            <h2>Envío gratis desde $ 2.500</h2>
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de
+                Mercado Puntos.</p>
+        </div>
+        <div class="footer-pie">
+            <i class="fas fa-user-shield"></i>
+            <h2>Seguridad, de principio a fin</h2>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre
+                protegid@.</p>
+        </div>
+        <div class="footer-copy">
+            <p>Copyright © 1999-2020 MercadoLiebre S.R.L</p>
+        </div>
+    </footer>
+
+</html>
