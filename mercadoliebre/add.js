@@ -13,7 +13,7 @@ const app = express();
 const path = require('path'); //unifica las rutas entre los distintos sistemas operativos
 
 //Levantamos el SERVIDOR
-app.listen(3030,() => { 
+app.listen(process.env.PORT || 3030,() => { 
     console.log('Servidor 3030 corriendo y escuchando bien')
 });
 
